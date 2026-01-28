@@ -9,7 +9,9 @@ if %ERRORLEVEL% EQU 0 (
     echo Compilation successful!
     echo Starting game...
     java TicTacToeGUI
+    cd ..
 ) else (
     echo Compilation failed!
+    cd ..
     exit /b 1
 )

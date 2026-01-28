@@ -128,6 +128,7 @@ public class TicTacToeGUI extends JFrame {
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 buttons[i][j].setText("");
+                buttons[i][j].setForeground(Color.BLACK); // Reset color
             }
         }
         statusLabel.setText("Player X's turn");

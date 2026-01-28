@@ -117,6 +117,17 @@ public class TicTacToeTest {
             System.out.println("✗ Test 8 FAILED: Reset doesn't work");
         }
         
+        // Test 9: Bounds checking for getCell
+        totalTests++;
+        game.reset();
+        if (game.getCell(-1, 0) == ' ' && game.getCell(0, -1) == ' ' && 
+            game.getCell(3, 0) == ' ' && game.getCell(0, 3) == ' ') {
+            System.out.println("✓ Test 9 PASSED: Bounds checking works correctly");
+            testsPassed++;
+        } else {
+            System.out.println("✗ Test 9 FAILED: Bounds checking doesn't work");
+        }
+        
         // Print summary
         System.out.println("\n" + "=".repeat(50));
         System.out.println("Test Results: " + testsPassed + "/" + totalTests + " tests passed");

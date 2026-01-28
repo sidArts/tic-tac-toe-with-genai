@@ -61,7 +61,8 @@ java TicTacToeGUI
 tic-tac-toe-with-genai/
 ├── src/
 │   ├── TicTacToe.java      # Core game logic
-│   └── TicTacToeGUI.java   # GUI implementation
+│   ├── TicTacToeGUI.java   # GUI implementation
+│   └── TicTacToeTest.java  # Unit tests
 ├── run.sh                   # Linux/macOS run script
 ├── run.bat                  # Windows run script
 ├── .gitignore              # Git ignore file
@@ -80,6 +81,24 @@ tic-tac-toe-with-genai/
   - 3x3 grid of clickable buttons
   - Status label showing current player and game result
   - New Game button to reset the board
+
+## Testing
+
+The project includes unit tests to verify the core game logic:
+
+**To run tests:**
+```bash
+cd src
+javac TicTacToeTest.java
+java TicTacToeTest
+```
+
+The test suite includes 8 tests covering:
+- Initial game state validation
+- Valid and invalid move handling
+- Horizontal, vertical, and diagonal win detection
+- Draw detection
+- Game reset functionality
 
 ## License
 

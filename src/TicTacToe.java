@@ -118,6 +118,9 @@ public class TicTacToe {
      * @return The character at that position
      */
     public char getCell(int row, int col) {
+        if (row < 0 || row >= 3 || col < 0 || col >= 3) {
+            return ' ';
+        }
         return board[row][col];
     }
     
